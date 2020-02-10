@@ -1,0 +1,11 @@
+.Header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: green;
+
+  a {
+    margin: 30px;
+    text-decoration: none;
+  }
+}
