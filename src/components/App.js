@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 import CovrLettr from '../containers/CovrLettr';
 import AboutUs from '../containers/AboutUs';
 
@@ -12,6 +13,7 @@ export default function App() {
         <Route exact path="/" component={CovrLettr} />
         <Route exact path="/about" component={AboutUs} />
       </Switch> */}
+      <Footer />
     </Router>
   );
 }
