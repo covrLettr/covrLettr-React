@@ -5,7 +5,7 @@ import covrLettrImg from '../../assets/covrLettr.png';
 
 const Header = () => (
   <header className={styles.Header}>
-    <img src={covrLettrImg} alt="logo" />
+    <h1>CovrLettr</h1>
     <nav>
       <Link to="/">
         <span>Home</span>
