@@ -1,0 +1,115 @@
+{
+    "17":{
+        "nameofQuestion":"email",
+        "question":"What is your email?",
+        "placeHolder":"e.g.sam@sam.com"
+    },
+    "18":{
+        "nameofQuestion":"skillJobDescription1",
+        "question":"What is a skill you have that the job requires?",
+        "placeHolder":"e.g. time management"
+    },
+    "19":{
+        "nameofQuestion":"skillJobDescription2",
+        "question":"What is another skill you have that the job requires?",
+        "placeHolder":"e.g. problem solving"
+    },
+    "20":{
+        "nameofQuestion":"skillJobDescription3",
+        "question":"What is a skill you have that the job requires?",
+        "placeHolder":"e.g.emotional intelligence"
+    },
+    "21":{
+        "nameofQuestion":"whyLikeCompany",
+        "question":"Why do you like this company?",
+        "placeHolder":"e.g.Community involvement"
+    },
+    "22":{
+        "nameofQuestion":"somethingYouLove",
+        "question":"What is something you love?",
+        "placeHolder":"e.g. baby yoda"
+    },
+    "23":{
+        "nameofQuestion":"value1",
+        "question":"List one of your values.",
+        "placeHolder":"e.g. integrity"
+    },
+    "24":{
+        "nameofQuestion":"value2",
+        "question":"List another one of your values.",
+        "placeHolder":"e.g. trustworthiness"
+    },
+    "25":{
+        "nameofQuestion":"value3",
+        "question":"Name a third value.",
+        "placeHolder":"e.g. responsibility"
+    },
+    "26":{
+        "nameofQuestion":"lifeExperienceRelatedValues",
+        "question":"Tell me about a time in your life when you demonstrated one of those values?",
+        "placeHolder":"e.g. I saved a puppy."
+    },
+    "27":{
+        "nameofQuestion":"communityService",
+        "question":"Is the organization a part of any community service? If so, what?",
+        "placeHolder":"e.g. The Humane Society"
+    },
+    "28":{
+        "nameofQuestion":"companyCustomer",
+        "question":"Who are the company's target customers?",
+        "placeHolder":"e.g. everyday people"
+    },
+    "29":{
+        "nameofQuestion":"whyCustomerMatters",
+        "question":"Why are those customers close to your heart?",
+        "placeHolder":"e.g.creates equity"
+    },
+    "30":{
+        "nameofQuestion":"companyMotivatesMeTo",
+        "question":"If hired, what would you be motivated to do?",
+        "placeHolder":"e.g.plant trees"
+    },
+    "31":{
+        "nameofQuestion":"opportunitiesTheEmployerProvides1",
+        "question":"What opportunities does this company offer it's employees?",
+        "placeHolder":"e.g. beer on tap"
+    },
+    "32":{
+        "nameofQuestion":"techLanguage1",
+        "question":"List a technical languages/skill you know?",
+        "placeHolder":"e.g. React"
+    },
+    "33":{
+        "nameofQuestion":"techLanguage2",
+        "question":"List a second technical languages/skill you know?",
+        "placeHolder":"e.g. Node.js"
+    },
+    "34":{
+        "nameofQuestion":"techLanguage3",
+        "question":"List a third technical languages/skill you know?",
+        "placeHolder":"e.g. MongoDB"
+    },
+    "35":{
+        "nameofQuestion":"techLanguage4",
+        "question":"List a forth technical languages/skill you know?",
+        "placeHolder":"e.g. Express"
+    },
+    "36":{
+        "nameofQuestion":"pastExperience",
+        "question":"",
+        "placeHolder":"e.g."
+    },
+    "37":{
+        "nameofQuestion":"pastAccomplishment1",
+        "question":"What is a major past accomplishment?",
+        "placeHolder":"e.g. Employee of the month"
+    },
+    "38":{
+        "nameofQuestion":"pastAccomplishment2",
+        "question":"What is another major past accomplishment?",
+        "placeHolder":"e.g. saving money"
+    },
+    "signOff":{
+        "sincerely":"sincerely"
+    }
+}
