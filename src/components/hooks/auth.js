@@ -14,6 +14,15 @@ export const SessionProvider = ({ children }) => {
       });
   }, []);
 
+  const signup = (email, password) => {
+    setAuthErr(null);
+    return signupUser(email, password)
+      .then(newUser => {
+        setUser(newUser);
+      })
+      .catch(err => setAuthErr(err.message));
+  };
+
   const login = (email, password) => {
     setAuthErr(null);
     return loginUser(email, password)
