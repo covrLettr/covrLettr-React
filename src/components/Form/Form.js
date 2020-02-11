@@ -1,13 +1,16 @@
 import React from 'react';
 import InputForm from '../InputForm/InputForm';
 import SubmitButton from '../SubmitButton/SubmitButton.js'; 
+import questions from  '../../questions.js';
 
 const Form = () => {
-  // const inputFormElements = 
+  const inputFormElements = questions.map(({ nameOfQuestion, question, placeholder }) => (
+    <InputForm key={nameOfQuestion} nameOfQuestion={nameOfQuestion} question={question} placeholder={placeholder} />
+  ));
 
   return (
     <form>
-      <InputForm />
+      {inputFormElements}
       <aside>
         <SubmitButton />
       </aside>
