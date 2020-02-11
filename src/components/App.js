@@ -1,6 +1,5 @@
 import React from 'react';
-import HeroImage from '../components/HeroImage/HeroImage';
 
 export default function App() {
-  return <HeroImage />;
+  return <h1>Hello World</h1>;
 }
