@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+.Header {
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  align-items: center;
+  background: #071E22;
+  color: #F4C095;
+  border-bottom: 2px solid #7D4745;
+
+  h1 {
+    font-size: 90px;;
+  }
+
+  a {
+    margin: 30px;
+    text-decoration: none;
+    font-family: 'Special Elite';
+  }
+
+  span:hover {
+    color: #7D4745;
+  }
+
+  a:visited {
+    color: #F4C095;
+  }
+}
