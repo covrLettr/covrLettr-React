@@ -5,10 +5,11 @@
   position: fixed;
   bottom: 0px;
   background: #071E22;
-  color: #F4C095;
+  color: #FBE0CF;
   border-top: 2px solid #7D4745;
 
   p {
+    font-family: sans-serif;
     padding: 5px 15px;
   }
 }

@@ -1,0 +1,15 @@
+.Main {
+  display: flex;
+  background-image: url('../components/assets/heroImage.jpg');
+  background-size: cover;
+
+  form {
+    width: 40vw;
+  }
+
+  div {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
