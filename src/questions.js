@@ -87,12 +87,6 @@ const data = [
     'question': 'Name a third passion',
     'placeHolder': 'e.g. Drawing'
   },
-      
-  {
-    'nameofQuestion':'email',
-    'question':'What is your email?',
-    'placeHolder':'e.g.sam@sam.com'
-  },
   {
     'nameofQuestion':'skillJobDescription1',
     'question':'What is a skill you have that the job requires?',
@@ -185,7 +179,7 @@ const data = [
   },
   {
     'nameofQuestion':'pastExperience',
-    'question':'',
+    'question':'What was your last job?',
     'placeHolder':'e.g.'
   },
   {
