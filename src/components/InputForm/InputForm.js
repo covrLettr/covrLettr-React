@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './InputForm.css';
 
 
 const InputForm = ({ nameOfQuestion, placeholder, question }) => (
   <>
     <label htmlFor={nameOfQuestion} >{question}</label>
     <input type="text" name={nameOfQuestion} placeholder={placeholder} id={nameOfQuestion} />
-   
   </>
 );
 
