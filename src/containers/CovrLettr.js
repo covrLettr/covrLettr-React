@@ -1,8 +1,14 @@
 import React from 'react';
 import Form from '../components/Form/Form';
+// import HeroImage from '../components/HeroImage/HeroImage';
+import styles from './CovrLettr.css';
 
 const CovrLettr = () => (
-  <Form />
+  <main className={styles.Main}>
+    < div >
+      <Form />
+    </div>
+  </main>
 )
 ;
 

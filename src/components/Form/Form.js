@@ -10,13 +10,11 @@ const Form = ({ onSubmit }) => {
   ));
 
   return (
-    <section>
-      <form className={styles.Form}>
+    <section className={styles.Form}>
+      <form>
         {inputFormElements}
-        <h6>
-          <input type="reset"  name="ResetButton" value="Reset"></input>
-        </h6>
-        <button className={styles.Form} onSubmit={onSubmit} >Create <br/> Covr Lettr</button>
+        <input type="reset"  name="ResetButton" value="Reset"></input>
+        <button onSubmit={onSubmit} >Create <br/> Covr Lettr</button>
       </form>
     </section>
   );
