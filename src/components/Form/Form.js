@@ -1,10 +1,10 @@
 import React from 'react';
 import InputForm from '../InputForm/InputForm';
-import SubmitButton from '../SubmitButton/SubmitButton.js'; 
+import PropTypes from 'prop-types';
 import questions from  '../../questions.js';
 import styles from './Form.css';
 
-const Form = () => {
+const Form = ({ onSubmit }) => {
   const inputFormElements = questions.map(({ nameOfQuestion, question, placeholder }, i) => (
     <InputForm key={i} nameOfQuestion={nameOfQuestion} question={question} placeholder={placeholder} />
   ));
@@ -12,12 +12,15 @@ const Form = () => {
   return (
     <form className={styles.Form}>
       {inputFormElements}
-      <aside>
-        <SubmitButton />
-      </aside>
+      <button className={styles.Form} onSubmit={onSubmit} >Create 
+    Covr Lettr</button>
     </form>
   );
     
+};
+
+Form.propTypes = {
+  onSubmit: PropTypes.func.isRequired
 };
 
 
