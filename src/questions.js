@@ -23,7 +23,7 @@ const data = [
     
   {
     'nameOfQuestion': 'companyName',
-    'question': 'What is the company\'s name',
+    'question': 'What is the company\'s name?',
     'placeHolder': 'e.g. Adobe'
   },
   {
@@ -84,7 +84,7 @@ const data = [
   ,
   {
     'nameOfQuestion': 'passion3',
-    'question': 'Name a third passion',
+    'question': 'Name a third passion.',
     'placeHolder': 'e.g. Drawing'
   },
   {
@@ -193,7 +193,9 @@ const data = [
     'placeHolder':'e.g. saving money'
   },
   {
-    'sincerely':'sincerely'
+    'nameOfQuestion': 'sincerely',
+    'question': 'What is your preferred sign off?',
+    'placeHolder': 'e.g. Sincerely'
   }
 ];
 

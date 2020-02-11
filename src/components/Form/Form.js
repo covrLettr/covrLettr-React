@@ -13,7 +13,10 @@ const Form = ({ onSubmit }) => {
     <section>
       <form className={styles.Form}>
         {inputFormElements}
-        <button className={styles.Form} onSubmit={onSubmit} >Create Covr Lettr</button>
+        <h6>
+          <input type="reset"  name="ResetButton" value="Reset"></input>
+        </h6>
+        <button className={styles.Form} onSubmit={onSubmit} >Create <br/> Covr Lettr</button>
       </form>
     </section>
   );
@@ -25,3 +28,4 @@ Form.propTypes = {
 };
 
 export default Form;
+

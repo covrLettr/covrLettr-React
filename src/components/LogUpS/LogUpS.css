@@ -1,0 +1,50 @@
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-form label{
+    margin-bottom: 5px;
+}
+.auth-form label input{
+    background-color: white;
+    border-radius: 2px;
+    border: 0;
+    padding: 5px;
+}
+.signin-button{
+    color: white;
+    font-family: 'Merriweather Sans';
+    background-color: #006590;
+    border: 0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 100px;
+    transition: all 0.2s ease-in-out;
+}
+.signup-button{
+    color: white;
+    font-family: 'Merriweather Sans';
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.signup-button:hover,
+.signin-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+p a, p a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+p a:hover {
+    cursor: pointer;
+}
