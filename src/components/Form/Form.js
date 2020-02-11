@@ -10,11 +10,12 @@ const Form = ({ onSubmit }) => {
   ));
 
   return (
-    <form className={styles.Form}>
-      {inputFormElements}
-      <button className={styles.Form} onSubmit={onSubmit} >Create 
-    Covr Lettr</button>
-    </form>
+    <section>
+      <form className={styles.Form}>
+        {inputFormElements}
+        <button className={styles.Form} onSubmit={onSubmit} >Create Covr Lettr</button>
+      </form>
+    </section>
   );
     
 };
@@ -22,6 +23,5 @@ const Form = ({ onSubmit }) => {
 Form.propTypes = {
   onSubmit: PropTypes.func.isRequired
 };
-//sd
 
 export default Form;
