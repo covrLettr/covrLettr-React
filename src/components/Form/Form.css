@@ -1,6 +1,17 @@
 .Form {
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  padding-bottom: 40px;
 
+  button {
+    height: 15%;
+    width: 15%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #7d4745;
+    color: #fbe0cf;
+  }
 }
