@@ -129,7 +129,7 @@ const data = [
   },
   {
     'nameofQuestion':'lifeExperienceRelatedValues',
-    'question':'Tell me about a time in your life when you demonstrated one of those values?',
+    'question':'Tell me about a time when you demonstrated one of those values?',
     'placeHolder':'e.g. I saved a puppy.'
   },
   {

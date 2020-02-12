@@ -5,11 +5,9 @@ import styles from './CovrLettr.css';
 
 const CovrLettr = () => (
   <main className={styles.Main}>
-    < div >
+    <div>
       <Form />
     </div>
   </main>
-)
-;
-
+);
 export default CovrLettr;
