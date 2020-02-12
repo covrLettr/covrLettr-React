@@ -14,7 +14,7 @@ const Form = ({ onSubmit }) => {
       <form>
         {inputFormElements}
         <input type="reset"  name="ResetButton" value="Reset"></input>
-        <button onSubmit={onSubmit} >Create <br/> Covr Lettr</button>
+        <button onSubmit={onSubmit} > Create </button>
       </form>
     </section>
   );
