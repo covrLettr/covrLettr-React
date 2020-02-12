@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './LogUpS.css';
 import { useSignup } from '../hooks/auth';
 
-const SignUp = () => {
+const SignUpForm = () => {
   const { signup, authErr } = useSignup();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -27,5 +27,6 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+
+export default SignUpForm;
 
