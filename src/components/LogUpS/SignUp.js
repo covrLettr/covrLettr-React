@@ -23,6 +23,7 @@ const SignUpForm = () => {
         <button className="signin-button">Sign Up</button>
         <p className="go-back-link"><a href="../index.html">Go Back</a></p>
       </form>
+      <button>Already a User?</button>
     </>
   );
 };
