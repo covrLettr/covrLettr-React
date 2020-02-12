@@ -19,10 +19,10 @@ const About = () => (
           photography you can catch me wandering around portland catching
           reflections.
         </p>
-        <a href='https://www.linkedin.com/in/nikkisato/'>
+        <a target='blank' href='https://www.linkedin.com/in/nikkisato/'>
           <FaLinkedin size={32} />
         </a>
-        <a href='https://github.com/nikkisato'>
+        <a target='blank' href='https://github.com/nikkisato'>
           <FaGithubSquare size={32} />
         </a>
       </div>
@@ -35,10 +35,10 @@ const About = () => (
           conflict resolution inform their passion for solving people centered
           problems. I believe technology is a tool to build equity.
         </p>
-        <a href='https://www.linkedin.com/in/samsterns/'>
+        <a target='blank' href='https://www.linkedin.com/in/samsterns/'>
           <FaLinkedin size={32} />
         </a>
-        <a href='https://github.com/samSterns'>
+        <a target='blank' href='https://github.com/samSterns'>
           <FaGithubSquare size={32} />
         </a>
       </div>
@@ -47,10 +47,10 @@ const About = () => (
         <img className={styles.img} src={mike}></img>
         <h1>Mike Grace</h1>
         <p>Full-Stack developer.</p>
-        <a href='https://www.linkedin.com/in/mikeegrace/'>
+        <a target='blank' href='https://www.linkedin.com/in/mikeegrace/'>
           <FaLinkedin size={32} />
         </a>
-        <a href='https://github.com/TravelFiend'>
+        <a target='blank' href='https://github.com/TravelFiend'>
           <FaGithubSquare size={32} />
         </a>
       </div>
@@ -59,10 +59,10 @@ const About = () => (
         <img className={styles.img} src={travis}></img>
         <h1>Travis Molter</h1>
         <p>Snowboarder and Full-Stack developer.</p>
-        <a href='https://www.linkedin.com/in/travismolter/'>
+        <a target='blank' href='https://www.linkedin.com/in/travismolter/'>
           <FaLinkedin size={32} />
         </a>
-        <a href='https://github.com/treem0'>
+        <a target='blank' href='https://github.com/treem0'>
           <FaGithubSquare size={32} />
         </a>
       </div>
