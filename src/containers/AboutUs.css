@@ -1,0 +1,5 @@
+.main {
+  background-image: url('../components/assets/Bokeh-Background.jpg');
+  display:flex;
+  background-size: cover
+}

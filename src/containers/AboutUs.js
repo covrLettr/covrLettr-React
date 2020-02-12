@@ -1,9 +1,11 @@
 import React from 'react';
 import About from '../components/About/About';
-
+import styles from './AboutUs.css';
 
 const AboutUs = () => (
-  <About />
+  <main className={styles.main}>
+    <About />
+  </main>
 );
 
 export default AboutUs;
