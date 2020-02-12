@@ -13,8 +13,8 @@ const Form = ({ onSubmit }) => {
     <section className={styles.Form}>
       <form>
         {inputFormElements}
-        <input type="reset"  name="ResetButton" value="Reset"></input>
         <button onSubmit={onSubmit} > Create </button>
+        <input type="reset"  name="ResetButton" value="Reset"></input>
       </form>
     </section>
   );
