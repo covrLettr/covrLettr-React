@@ -5,7 +5,7 @@ import styles from './CovrLettr.css';
 
 const CovrLettr = () => (
   <main className={styles.Main}>
-    < div >
+    < div className={styles.scroll}>
       <Form />
     </div>
   </main>

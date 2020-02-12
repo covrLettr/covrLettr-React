@@ -3,12 +3,13 @@ import styles from './About.css';
 import nikki from '../assets/nikki-sato.jpg';
 import travis from '../assets/travis-molter.jpg';
 import sam from '../assets/sam-sterns.jpg';
+import mike from '../assets/mike-grace.png';
+
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 
 const About = () => (
   <>
     <div className={styles.parent}>
-
       <div className={styles.div1}>
         <img className={styles.img} src={nikki}></img>
         <h1>Nikki Sato</h1>
@@ -43,6 +44,7 @@ const About = () => (
       </div>
 
       <div className={styles.div3}>
+        <img className={styles.img} src={mike}></img>
         <h1>Mike Grace</h1>
         <p>Full-Stack developer.</p>
         <a href='https://www.linkedin.com/in/mikeegrace/'>
@@ -64,7 +66,6 @@ const About = () => (
           <FaGithubSquare size={32} />
         </a>
       </div>
-
     </div>
   </>
 );
