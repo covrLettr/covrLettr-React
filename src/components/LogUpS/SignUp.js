@@ -13,12 +13,15 @@ const SignUpForm = () => {
     signup(email, password);
   };
 
+  const handleEmailChange = ({ target }) => setEmail(target.value);
+  const handlePasswordChange = ({ target }) => setPassword(target.value);
+
   return (
     <>
       {authErr && <p>{authErr}</p>}
       <form className={styles.SignUp} onSubmit={handleSubmit}>
-        <label htmlFor="email">Email: <input type="text" onChange={({ target }) => setEmail(target.value)} id="email" name="email" required /></label>      
-        <label htmlFor="password">Password: <input type="password" id="password" name="password" onChange={({ target }) => setPassword(target.value)} required />
+        <label htmlFor="email">Email: <input type="text" onChange={handleEmailChange} id="email" name="email" required /></label>      
+        <label htmlFor="password">Password: <input type="password" id="password" name="password" onChange={handlePasswordChange} required />
         </label>
         <button className="signin-button">Sign Up</button>
         <p className="go-back-link"><a href="../index.html">Go Back</a></p>
