@@ -11,10 +11,10 @@ const Form = ({ onSubmit }) => {
 
   return (
     <section className={styles.Form}>
-      <form>
+      <form onSubmit={onSubmit}>
         {inputFormElements}
         <input type="reset"  name="ResetButton" value="Reset"></input>
-        <button onSubmit={onSubmit} > Create </button>
+        <button> Create </button>
       </form>
     </section>
   );

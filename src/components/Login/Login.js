@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import styles from './LogUpS.css';
 import { useLogin } from '../hooks/auth';
-
 
 const LogIn = () => {
   const { login, authErr } = useLogin();
@@ -19,7 +17,7 @@ const LogIn = () => {
   return (
     <>
       {authErr && <p>{authErr}</p>}
-      <form className={styles.Login} onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <p>
           <label htmlFor="signin-email">Email</label>
           <input id="signin-email" onChange={handleEmailChange} type="text" name="email" required placeholder="you@somewhere.com" />
