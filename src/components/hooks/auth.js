@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import { signupUser, loginUser, verifyAuth } from '../services/authApi';
 
 const SessionContext = createContext();
@@ -6,11 +7,16 @@ const SessionContext = createContext();
 export const SessionProvider = ({ children }) => {
   const [user, setUser] = useState();
   const [authErr, setAuthErr] = useState();
+  const history = useHistory();
 
   useEffect(() => {
     verifyAuth()
       .then(user => {
         setUser(user);
+        history.push('/');
+      })
+      .catch(() => {
+        history.push('/userauth');
       });
   }, []);
 

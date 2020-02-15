@@ -6,17 +6,20 @@
   height: 10vh;
   align-items: center;
   background: #071E22;
-  color: #F4C095;
+  color: #fbe0cf;
   border-bottom: 2px solid #7D4745;
+  padding: 40px 10px 30px 10px;
 
   h1 {
-    font-size: 90px;;
+    font-size: 90px;
+    font-family: 'Satisfy', cursive;
   }
 
   a {
     margin: 30px;
     text-decoration: none;
     font-family: 'Special Elite';
+    color: #fbe0cf;
   }
 
   span:hover {
@@ -24,6 +27,6 @@
   }
 
   a:visited {
-    color: #F4C095;
+   color:  #60797D;
   }
 }
