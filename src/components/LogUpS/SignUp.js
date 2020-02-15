@@ -21,9 +21,9 @@ const SignUpForm = () => {
         <label htmlFor="password">Password: <input type="password" id="password" name="password" onChange={({ target }) => setPassword(target.value)} required />
         </label>
         <button className="signin-button">Sign Up</button>
-        <p className="go-back-link"><a href="../index.html">Go Back</a></p>
+        {/* <p className="go-back-link"><a href="../index.html">Go Back</a></p> */}
       </form>
-      <button>Already a User?</button>
+      {/* <button>Already a User?</button> */}
     </>
   );
 };
