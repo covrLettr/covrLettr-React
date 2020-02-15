@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './SignUp.css';
 import { useSignup } from '../hooks/auth';
 
-const SignUpForm = () => {
+const SignUpForm = ({handleSubmit, handleClick }) => {
   const { signup, authErr } = useSignup();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -25,7 +25,7 @@ const SignUpForm = () => {
         <button className="signin-button">Sign Up</button>
         {/* <p className="go-back-link"><a href="../index.html">Go Back</a></p> */}
       </form>
-      <button className={styles.toggle}>Already a User?</button>
+      <button onClick={handleClick} className={styles.toggle}>Already a User?</button>
     </>
   );
 };
