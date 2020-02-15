@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
-.Form {
+.Login {
   margin: 50px;
   display: flex;
   flex-direction: column;
   overflow: scroll;
   padding-bottom: 40px;
   color: #071e22;
-  border-radius: 10px;
-  z-index: 5;
+
 
   input {
     background-color: #7d4745;
@@ -30,9 +29,6 @@
 
   button {
     color: #fbe0cf;
-    position: absolute;
-    top: 80%;   
-    right: 0%;
     font-size: 28px;
     font-weight: heavy;
     text-align: center;
@@ -49,9 +45,7 @@
     margin-bottom: 10px;
     font-family: 'Satisfy', cursive;
   }
+  
 
-  .reset {
-    width: 50% !important;
-    background-color: red;
-  }
 }
+
