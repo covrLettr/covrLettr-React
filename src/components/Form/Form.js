@@ -11,14 +11,13 @@ const Form = ({ onSubmit }) => {
 
   return (
     <section className={styles.Form}>
-      <form>
+      <form onSubmit={onSubmit}>
         {inputFormElements}
         <button onSubmit={onSubmit} > Create </button>
         <input type="reset" className="reset" name="ResetButton" value="Reset"></input>
       </form>
     </section>
   );
-    
 };
 
 Form.propTypes = {
