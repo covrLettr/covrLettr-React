@@ -10,6 +10,10 @@ const Header = () => (
         <span>Home</span>
       </Link>
 
+      <Link to="/userauth">
+        <span>Signup/Login</span>
+      </Link>
+
       <Link to="/about">
         <span>About</span>
       </Link>

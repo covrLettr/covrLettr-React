@@ -18,14 +18,7 @@ const LogIn = ({ authErr, handleEmailChange, handlePasswordChange, handleLoginSu
         <button>Log In</button>
       </p>
     </form>
-<<<<<<< HEAD
     <button onClick={handleClick} className={styles.toggle}>Not a User?</button>
-=======
-
-    <button onClick={handleClick} className={styles.toggle}>
-      Not a User?
-    </button>
->>>>>>> d8455da4f27e79a59b35cb52c4c9d85ec353dd23
   </>
 );
 
@@ -34,7 +27,7 @@ LogIn.propTypes = {
   handlePasswordChange: PropTypes.func.isRequired,
   handleLoginSubmit: PropTypes.func.isRequired,
   handleClick: PropTypes.func.isRequired,
-  authErr: PropTypes.string.isRequired
+  authErr: PropTypes.string
 };
 
 export default LogIn;

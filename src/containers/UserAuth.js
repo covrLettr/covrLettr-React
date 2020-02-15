@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import LoginForm from '../components/Login/Login';
 import SignUpForm from '../components/LogUpS/SignUp';
-import { useLogin } from '../hooks/auth';
-import { useSignup } from '../hooks/auth';
+import { useLogin, useSignup } from '../components/hooks/auth';
 
 export default function UserAuth() {
   const { signup, authErr } = useSignup();
@@ -28,8 +27,8 @@ export default function UserAuth() {
 
   return (
     <>
-      <LoginForm authErr={authErr} handlePasswordChange={handlePasswordChange} handleEmailChange={handleEmailChange} handleLoginSubmit={handleLoginSubmit} handleClick={handleClick} />
-      <SignUpForm authErr={loginAuthErr} handlePasswordChange={handlePasswordChange} handleEmailChange={handleEmailChange} handleSignupSubmit={handleSignupSubmit} handleClick={handleClick} />
+      {!toggle && <SignUpForm authErr={loginAuthErr} handlePasswordChange={handlePasswordChange} handleEmailChange={handleEmailChange} handleSignupSubmit={handleSignupSubmit} handleClick={handleClick} />}
+      {toggle && <LoginForm authErr={authErr} handlePasswordChange={handlePasswordChange} handleEmailChange={handleEmailChange} handleLoginSubmit={handleLoginSubmit} handleClick={handleClick} />}
     </>
   );
 }
