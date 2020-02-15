@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
-.Form {
+.SignUp {
   margin: 50px;
   display: flex;
   flex-direction: column;
   overflow: scroll;
   padding-bottom: 40px;
   color: #071e22;
-  border-radius: 10px;
-  z-index: 5;
 
   input {
     background-color: #7d4745;
@@ -30,9 +28,6 @@
 
   button {
     color: #fbe0cf;
-    position: absolute;
-    top: 80%;   
-    right: 0%;
     font-size: 28px;
     font-weight: heavy;
     text-align: center;
@@ -49,9 +44,23 @@
     margin-bottom: 10px;
     font-family: 'Satisfy', cursive;
   }
+}
 
-  .reset {
-    width: 50% !important;
-    background-color: red;
-  }
+.toggle {
+  color: #fbe0cf;
+  font-size: 28px;
+  font-weight: heavy;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #7d4745;
+  height: 10%;
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #071e22;
+  border-radius: 10px;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  font-family: 'Satisfy', cursive;
 }
