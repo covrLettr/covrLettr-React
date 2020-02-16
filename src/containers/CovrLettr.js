@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from '../components/Form/Form';
 import styles from './CovrLettr.css';
-import get from '../components/services/request';
+import { useSessionUser } from '../components/hooks/auth';
+
 
 const CovrLettr = () => {
-  const [userAnswers, setUserAnswers] = useState({});
+  const user = useSessionUser();
+  const [userAnswers, setUserAnswers] = useState({ userId: null });
+
+  useEffect(() => {
+    console.log(user);
+    // setUserAnswers({
+    //   userId: user._id
+    // });
+  });
 
   const handleChange = ({ target }) => {
     return setUserAnswers({ [target.name]: target.value });
@@ -12,8 +21,10 @@ const CovrLettr = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
+    
 
-    console.log('pooooooooop');
+
+    console.log(user);
     
   };
 
