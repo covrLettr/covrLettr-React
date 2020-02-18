@@ -4,7 +4,6 @@
   margin: 50px;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
   padding-bottom: 40px;
   color: #071e22;
 
@@ -49,3 +48,21 @@
 
 }
 
+button {
+  color: #fbe0cf;
+  font-size: 28px;
+  font-weight: heavy;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #071E22;
+  height: 10%;
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #071e22;
+  border-radius: 10px;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  font-family: 'Satisfy', cursive;
+}
