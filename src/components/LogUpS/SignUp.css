@@ -8,7 +8,7 @@
   width: 80%;
   min-width: 300px;
   margin: auto;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   margin-top: 50px;
 
   input {
@@ -42,25 +42,37 @@
     margin-top: 30px;
     color: #fbe0cf;
     background-color: #071e22;
+    font-size: 28px;
+    font-weight: heavy;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 20%;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #071e22;
+    border-radius: 10px;
+    border-width: 1px 1px 3px;
+    margin-bottom: 20px;
+    font-family: 'Satisfy', cursive;
   }
 }
 
 .toggle {
-  color: #fbe0cf;
   font-size: 28px;
   font-weight: heavy;
   text-align: center;
   display: flex;
   justify-content: center;
-  background-color: #071e22;
   height: 10%;
   width: 20%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #071e22;
   border-radius: 10px;
   border-width: 1px 1px 3px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: 'Satisfy', cursive;
   color: #071e22;
   background-color: #fbe0cf;
