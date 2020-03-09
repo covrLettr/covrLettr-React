@@ -19,7 +19,8 @@ const CovrLettr = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    post('/userAnswers', userAnswers);
+    post('/userAnswers', userAnswers)
+      .then(userAnswers => post('/coverLetters', { userAnswerId: userAnswers._id }));
     console.log({ USER: user, USERANSWERS: userAnswers });
   };
 
