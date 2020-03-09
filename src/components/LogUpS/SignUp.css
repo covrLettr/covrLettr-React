@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
 .SignUp {
-  margin: 50px;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
-  padding-bottom: 40px;
   color: #071e22;
+  text-align: center;
+  width: 80%;
+  min-width: 300px;
+  margin: auto;
+  padding-bottom: 20px;
+  margin-top: 50px;
 
   input {
     background-color: #7d4745;
@@ -16,51 +19,103 @@
     border-width: 1px 1px 3px;
     color: #fbe0cf;
     font-size: 16px;
-    width: 70%;
-  }
-
-  input {
-    margin-top: 15px;
-    margin-bottom: 30px;
-    width: 95%;
     height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
+  label,
+  input {
+    display: inline-block;
+    display: inline;
+    text-align: Center;
+  }
+
+  label {
+    text-align: right;
+    width: 65%;
+  }
+  input {
+    width: 35%;
+  }
   button {
+    margin-top: 30px;
     color: #fbe0cf;
+    background-color: #071e22;
     font-size: 28px;
     font-weight: heavy;
     text-align: center;
     display: flex;
     justify-content: center;
-    background-color: #7d4745;
     height: 10%;
-    width: 40%;
+    width: 20%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #071e22;
     border-radius: 10px;
     border-width: 1px 1px 3px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: 'Satisfy', cursive;
   }
 }
 
 .toggle {
-  color: #fbe0cf;
   font-size: 28px;
   font-weight: heavy;
   text-align: center;
   display: flex;
   justify-content: center;
-  background-color: #7d4745;
   height: 10%;
-  width: 40%;
+  width: 20%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #071e22;
   border-radius: 10px;
   border-width: 1px 1px 3px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: 'Satisfy', cursive;
+  color: #071e22;
+  background-color: #fbe0cf;
+}
+
+@media only screen and (max-width: 600px) {
+  .SignUp {
+    display: flex;
+    flex-direction: column;
+    color: #071e22;
+    width: 100%;
+
+    input {
+      background-color: #7d4745;
+      border: 1px solid #071e22;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+      border-radius: 10px;
+      border-width: 1px 1px 3px;
+      color: #fbe0cf;
+      font-size: 16px;
+      height: 30px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    label,
+    input {
+      display: inline;
+      text-align: center;
+    }
+
+    label {
+      text-align: right;
+    }
+
+    input {
+    min-width: 200px;
+    }
+    button {
+      min-width: 200px;
+    }
+  }
+  .toggle {
+    min-width: 200px;
+  }
 }

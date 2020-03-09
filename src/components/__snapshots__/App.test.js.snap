@@ -12,8 +12,11 @@ exports[`App component renders App 1`] = `
       />
       <Route
         component={[Function]}
-        exact={true}
         path="/about"
+      />
+      <Route
+        component={[Function]}
+        path="/userauth"
       />
     </Switch>
   </SessionProvider>
