@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Form from '../components/Form/Form';
 import styles from './CovrLettr.css';
+import { post } from '../../src/components/services/request';
 import { useSessionUser } from '../components/hooks/auth';
 
 
@@ -18,8 +19,8 @@ const CovrLettr = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    
-    console.log(user);
+    post('/userAnswers', userAnswers);
+    console.log({ USER: user, USERANSWERS: userAnswers });
   };
 
   return (
