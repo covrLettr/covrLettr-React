@@ -13,7 +13,7 @@ const Form = ({ handleSubmit, handleChange }) => {
     <section className={styles.Form}>
       <form onSubmit={handleSubmit}>
         {inputFormElements}
-        <button onSubmit={handleSubmit} > Create </button>
+        <button onSubmit={handleSubmit}> Create </button>
         <input type="reset" className="reset" name="ResetButton" value="Reset"></input>
       </form>
     </section>
@@ -26,4 +26,3 @@ Form.propTypes = {
 };
 
 export default Form;
-

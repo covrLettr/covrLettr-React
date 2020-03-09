@@ -6,26 +6,20 @@ import { useSessionUser } from '../components/hooks/auth';
 
 const CovrLettr = () => {
   const user = useSessionUser();
-  const [userAnswers, setUserAnswers] = useState({ userId: null });
-
-  useEffect(() => {
-    console.log(user);
-    // setUserAnswers({
-    //   userId: user._id
-    // });
-  });
+  const [userAnswers, setUserAnswers] = useState();
 
   const handleChange = ({ target }) => {
-    return setUserAnswers({ [target.name]: target.value });
+    return setUserAnswers(prevState => ({
+      ...prevState,
+      userId: user._id,
+      [target.name]: target.value 
+    }));
   };
 
   const handleSubmit = event => {
     event.preventDefault();
     
-
-
     console.log(user);
-    
   };
 
   return (
