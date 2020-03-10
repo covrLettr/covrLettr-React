@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Login.css';
+import styles from '../LogUpS/SignUp.css';
 
 const LogIn = ({
   authErr,
@@ -13,32 +13,19 @@ const LogIn = ({
     {authErr && <p>{authErr}</p>}
     <form onSubmit={handleLoginSubmit} className={styles.Login}>
       <label htmlFor='signin-email'>
-        Email
-        <input
-          id='signin-email'
-          onChange={handleEmailChange}
-          type='text'
-          name='email'
-          required
-          placeholder='you@you.com'
-        />
+        Email:
+        <input id='signin-email' onChange={handleEmailChange} type='text' name='email' required placeholder='you@you.com' />
       </label>
 
       <label htmlFor='signin-password'>
-        Password
-        <input
-          id='signin-password'
-          onChange={handlePasswordChange}
-          type='password'
-          name='password'
-          required
-        />
+        Password:
+        <input id='signin-password' onChange={handlePasswordChange} type='password' name='password' required/>
       </label>
 
       <button>Log In</button>
     </form>
     <button onClick={handleClick} className={styles.toggle}>
-      Not a User?
+      New User?
     </button>
   </>
 );

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
-.SignUp {
+.SignUp, .Login {
   display: flex;
   flex-direction: column;
   color: #071e22;
@@ -20,12 +20,10 @@
     color: #fbe0cf;
     font-size: 16px;
     height: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 20px;
   }
 
-  label,
-  input {
+  label, input {
     display: inline-block;
     display: inline;
     text-align: Center;
@@ -35,9 +33,11 @@
     text-align: right;
     width: 65%;
   }
+
   input {
     width: 35%;
   }
+
   button {
     margin-top: 30px;
     color: #fbe0cf;
@@ -79,7 +79,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .SignUp {
+  .SignUp, .Login {
     display: flex;
     flex-direction: column;
     color: #071e22;
@@ -98,8 +98,7 @@
       margin-bottom: 15px;
     }
 
-    label,
-    input {
+    label, input {
       display: inline;
       text-align: center;
     }

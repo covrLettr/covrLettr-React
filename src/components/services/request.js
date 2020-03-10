@@ -2,7 +2,7 @@ const request = (path, method, body) => {
   return fetch(`https://covr-lettrs.herokuapp.com/api/v1${path}`, {
     method,
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
     credentials: 'include',
     body: JSON.stringify(body)
