@@ -4,7 +4,6 @@
   margin: 50px;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
   padding-bottom: 40px;
   color: #071e22;
   border-radius: 10px;
@@ -51,7 +50,7 @@
   }
 
   .reset {
-    width: 50% !important;
+    width: 50% ;
     background-color: red;
   }
 }
