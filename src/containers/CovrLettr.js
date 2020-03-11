@@ -20,9 +20,10 @@ const CovrLettr = () => {
   const handleSubmit = event => {
     event.preventDefault();
     post('/userAnswers', userAnswers)
-      .then(userAnswers => post('/coverLetters', { 'userAnswerId': userAnswers._id }))
-      .then(coverLetter => console.log(coverLetter));
-    console.log({ USER: user, USERANSWERS: userAnswers });
+      .then(userAnswers => {
+        post('/coverLetters', { 'userAnswerId': userAnswers._id });
+      })
+      .then(theLetter => console.log(JSON.stringify(theLetter)));
   };
 
   return (

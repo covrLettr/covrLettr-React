@@ -2,13 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '../LogUpS/SignUp.css';
 
-const LogIn = ({
-  authErr,
-  handleEmailChange,
-  handlePasswordChange,
-  handleLoginSubmit,
-  handleClick
-}) => (
+const LogIn = ({ authErr, handleEmailChange, handlePasswordChange, handleLoginSubmit, handleClick }) => (
   <>
     {authErr && <p>{authErr}</p>}
     <form onSubmit={handleLoginSubmit} className={styles.Login}>
