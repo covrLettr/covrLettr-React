@@ -21,9 +21,9 @@ const CovrLettr = () => {
     event.preventDefault();
     post('/userAnswers', userAnswers)
       .then(userAnswers => {
-        post('/coverLetters', { 'userAnswerId': userAnswers._id });
-      })
-      .then(theLetter => console.log(JSON.stringify(theLetter)));
+        post('/coverLetters', { 'userAnswerId': userAnswers._id }, true)
+          .then(theLetter => theLetter);
+      });
   };
 
   return (
@@ -31,6 +31,7 @@ const CovrLettr = () => {
       <div>
         <Form handleSubmit={handleSubmit} handleChange={handleChange} />
       </div>
+      <p>{theLetter}</p>
     </main>
   );
 };
