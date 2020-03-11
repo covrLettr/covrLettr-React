@@ -8,6 +8,8 @@ import { useSessionUser } from '../components/hooks/auth';
 const CovrLettr = () => {
   const user = useSessionUser();
   const [userAnswers, setUserAnswers] = useState();
+  const [coverLetter, setCoverLetter] = useState();
+  const [toggle, setToggle] = useState(false);
 
   const handleChange = ({ target }) => {
     return setUserAnswers(prevState => ({
@@ -22,17 +24,24 @@ const CovrLettr = () => {
     post('/userAnswers', userAnswers)
       .then(userAnswers => {
         post('/coverLetters', { 'userAnswerId': userAnswers._id }, true)
-          .then(theLetter => theLetter);
+          .then(theLetter => setCoverLetter(theLetter));
       });
+    setToggle(!toggle);
   };
 
   return (
-    <main className={styles.Main}>
-      <div>
-        <Form handleSubmit={handleSubmit} handleChange={handleChange} />
-      </div>
-      <p>{theLetter}</p>
-    </main>
+    <>
+      {!toggle && <main className={styles.Main}>
+        <div>
+          <Form handleSubmit={handleSubmit} handleChange={handleChange} />
+        </div>
+      </main>}
+      {toggle && <main className={styles.Main}>
+        <div>
+          <p>{coverLetter}</p>
+        </div>
+      </main>}  x
+    </>
   );
 };
 export default CovrLettr;
