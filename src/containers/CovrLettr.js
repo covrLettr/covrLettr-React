@@ -29,6 +29,17 @@ const CovrLettr = () => {
     setToggle(!toggle);
   };
 
+  const generateNew = event => {
+    event.preventDefault();
+    post('/userAnswers', userAnswers)
+      .then(userAnswers => {
+        post('/coverLetters', {
+          'userAnswerId': userAnswers._id
+        }, true)
+          .then(theLetter => setCoverLetter(theLetter));
+      });
+  };
+
   return (
     <>
       {!toggle && <main className={styles.Main}>
@@ -39,8 +50,10 @@ const CovrLettr = () => {
       {toggle && <main className={styles.Main}>
         <div>
           <p>{coverLetter}</p>
+          <button onClick={() => setToggle(!toggle)}>Change Answers</button>
+          <button onClick={generateNew}>Generate Another!</button>
         </div>
-      </main>}  x
+      </main>}
     </>
   );
 };
