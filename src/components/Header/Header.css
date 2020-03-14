@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
 .Header {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-around;
   height: 10vh;
+  width: 100vw;
   align-items: center;
   background: #071E22;
   color: #fbe0cf;

@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
 .Main {
   display: flex;
   background-image: url('../components/assets/heroImage.jpg');
   background-size: cover;
 
   form {
+    margin-top: 18vh;
     width: 40vw;
   }
 
@@ -12,5 +15,11 @@
     width: 100vw;
     background: rgba(255, 255, 255, 0.5);
     overflow: auto;
+  }
+
+  p {
+    font-family: 'Special Elite', cursive !important;
+    margin: 22vh 100px 0 100px;
+    line-height: 20px;
   }
 }

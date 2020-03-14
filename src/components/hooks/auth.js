@@ -25,6 +25,7 @@ export const SessionProvider = ({ children }) => {
     return signupUser(email, password)
       .then(newUser => {
         setUser(newUser);
+        history.push('/');
       })
       .catch(err => setAuthErr(err.message));
   };
@@ -34,6 +35,7 @@ export const SessionProvider = ({ children }) => {
     return loginUser(email, password)
       .then(user => {
         setUser(user);
+        history.push('/');
       })
       .catch(err => setAuthErr(err.message));
   };
