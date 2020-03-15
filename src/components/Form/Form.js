@@ -14,7 +14,7 @@ const Form = ({ handleSubmit, handleChange }) => {
       <form onSubmit={handleSubmit}>
         {inputFormElements}
         <button onSubmit={handleSubmit}>Generate Cover Letter</button>
-        <input type="reset" className="reset" name="ResetButton" value="Reset"></input>
+        <input type="reset" className={styles.Reset} name="ResetButton" value="Reset"></input>
       </form>
     </section>
   );
