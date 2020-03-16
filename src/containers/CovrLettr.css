@@ -22,4 +22,23 @@
     margin: 22vh 100px 0 100px;
     line-height: 20px;
   }
+  button {
+    margin-top: 30px;
+    color: #fbe0cf;
+    background-color: #071e22;
+    font-size: 28px;
+    font-weight: heavy;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 20%;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #071e22;
+    border-radius: 10px;
+    border-width: 1px 1px 3px;
+    margin-bottom: 20px;
+    font-family: 'Satisfy', cursive;
+  }
 }
