@@ -46,7 +46,7 @@ const About = () => (
       <div className={styles.div3}>
         <img className={styles.img} src={mike}></img>
         <h1>Mike Grace</h1>
-        <p>Full-Stack developer.</p>
+        <p>Avid coder and traveller. He is most at home in unfamiliar places with unfamiliar people.</p>
         <a href='https://www.linkedin.com/in/mikeegrace/'>
           <FaLinkedin size={32} />
         </a>

@@ -21,6 +21,7 @@
     font-family: 'Special Elite', cursive !important;
     margin: 22vh 100px 0 100px;
     line-height: 20px;
+    white-space: pre-line;
   }
   button {
     margin-top: 30px;
