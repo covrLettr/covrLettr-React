@@ -10,8 +10,8 @@ import UserAuth from '../containers/UserAuth';
 export default function App() {
   return (
     <Router>
-      <Header />
       <SessionProvider>
+        <Header />
         <Switch>
           <Route exact path="/" component={CovrLettr} />
           <Route path="/about" component={AboutUs} />

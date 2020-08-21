@@ -1,5 +1,6 @@
 const request = (path, method, body, letter) => {
-  return fetch(`https://covr-lettrs.herokuapp.com/api/v1${path}`, {
+  // return fetch(`https://covr-lettrs.herokuapp.com/api/v1${path}`, {
+  return fetch(`http://localhost:4321/api/v1${path}`, {
     method,
     headers: {
       'Content-Type': 'application/json',

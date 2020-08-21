@@ -20,6 +20,9 @@
 
   a {
     margin: 30px;
+  }
+
+  a, span {
     text-decoration: none;
     font-family: 'Special Elite';
     color: #fbe0cf;
@@ -30,6 +33,6 @@
   }
 
   a:visited {
-   color:  #60797D;
+    color:  #60797D;
   }
 }

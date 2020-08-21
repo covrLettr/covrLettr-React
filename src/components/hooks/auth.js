@@ -52,11 +52,6 @@ export const useSessionUser = () => {
   return user;
 };
 
-export const useHasSession = () => {
-  const user = useSessionUser();
-  return !!user;
-};
-
 export const useSignup = () => {
   const { signup, authErr } = useContext(SessionContext);
   return { signup, authErr };
