@@ -14,6 +14,9 @@ const CovrLettr = () => {
     return setUserAnswers(prevState => ({
       ...prevState,
       userId: user._id,
+      sincerely: 'Sincerely',
+      greeting: 'Dear',
+      pronoun: 'he/him',
       [target.name]: target.value
     }));
   };
@@ -29,7 +32,7 @@ const CovrLettr = () => {
         });
       setToggle(!toggle);
     } else {
-      console.log('BUTTHOLES');
+      alert('It seems you missed something.  Please make sure all questions are answered.');
     }
   };
 

@@ -7,12 +7,12 @@ const data = [
   {
     nameOfQuestion: 'pronoun',
     question: 'What are your pronouns?',
-    placeholder: 'e.g. they/them, she/her, he/him'
+    enum: ['he/him', 'she/her', 'they/them']
   },
   {
     nameOfQuestion: 'greeting',
     question: 'What is your preferred greeting?',
-    placeholder: 'e.g. Dear, Attention:, Hello'
+    enum: ['Dear', 'Attention:', 'Hello']
   },
     
   {
@@ -195,7 +195,7 @@ const data = [
   {
     nameOfQuestion: 'sincerely',
     question: 'What is your preferred sign off?',
-    placeholder: 'e.g. Sincerely'
+    enum: ['Sincerely', 'Thank you', 'Best regards', 'Thank you for your consideration']
   }
 ];
 
