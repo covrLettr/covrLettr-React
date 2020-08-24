@@ -2,8 +2,8 @@
 
 exports[`App component renders App 1`] = `
 <BrowserRouter>
-  <Header />
   <SessionProvider>
+    <Header />
     <Switch>
       <Route
         component={[Function]}
