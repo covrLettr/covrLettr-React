@@ -7,7 +7,7 @@ const Header = () => {
   const user = useSessionUser();
 
   const handleLogout = () => {
-    return fetch('http://localhost:4321/api/v1/auth/logout', {
+    return fetch('https://covr-lettrs.herokuapp.com/api/v1/auth/logout', {
       method: 'POST',
       credentials: 'include',
       headers: {
