@@ -9,7 +9,7 @@
   border-radius: 10px;
   z-index: 5;
 
-  input {
+  input, select {
     background-color: #7d4745;
     border: 1px solid #071e22;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
@@ -24,31 +24,20 @@
     height: 30px;
   }
 
-  button {
-    color: #fbe0cf;
-    position: absolute;
-    top: 50%;   
-    right: 8%;
-    font-size: 28px;
-    font-weight: heavy;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    background-color: #7d4745;
-    height: 10%;
-    width: 40%;
-    margin: 0 auto;
-    padding: 10px;
-    border: 1px solid #071e22;
-    border-radius: 10px;
-    border-width: 1px 1px 3px;
-    margin-bottom: 10px;
-    font-family: 'Satisfy', cursive;
+  .Reset {
+    width: 35%;
+    background: #061E21;
+    margin-top: 50px;
   }
 
-}
+  select {
+    height: 35px;
+    width: 100;
+  }
 
-.Reset {
-  width: 25% ;
-margin-top: 50px;
+  button {
+    position: absolute;
+    top: 50%;   
+    right: 18%;
+  }
 }
