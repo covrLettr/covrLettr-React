@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
 .Main {
   display: flex;
   background-image: url('../components/assets/heroImage.jpg');
   background-size: cover;
 
   form {
+    margin-top: 18vh;
     width: 40vw;
   }
 
@@ -11,5 +14,32 @@
     height: 100vh;
     width: 100vw;
     background: rgba(255, 255, 255, 0.5);
+    overflow: auto;
+  }
+
+  p {
+    font-family: 'Special Elite', cursive !important;
+    margin: 22vh 100px 0 100px;
+    line-height: 20px;
+    white-space: pre-line;
+  }
+  button {
+    margin-top: 30px;
+    color: #fbe0cf;
+    background-color: #071e22;
+    font-size: 28px;
+    font-weight: heavy;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 20%;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #071e22;
+    border-radius: 10px;
+    border-width: 1px 1px 3px;
+    margin-bottom: 20px;
+    font-family: 'Satisfy', cursive;
   }
 }
