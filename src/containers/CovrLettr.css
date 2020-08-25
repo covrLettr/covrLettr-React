@@ -2,7 +2,7 @@
 
 .Main {
   display: flex;
-  background-image: url('../components/assets/heroImage.jpg');
+  background-image: url('../../public/assets/heroImage.jpg');
   background-size: cover;
 
   form {
