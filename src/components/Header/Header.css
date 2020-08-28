@@ -18,11 +18,8 @@
     font-family: 'Satisfy', cursive;
   }
 
-  a {
-    margin: 30px;
-  }
-
   a, span {
+    margin: 30px;
     text-decoration: none;
     font-family: 'Special Elite';
     color: #fbe0cf;
