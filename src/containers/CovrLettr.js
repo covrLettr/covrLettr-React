@@ -1,14 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from '../components/Form/Form';
 import styles from './CovrLettr.css';
 import { post } from '../../src/components/services/request';
 import { useSessionUser } from '../components/hooks/auth';
+import { useHistory } from 'react-router-dom';
+
 
 const CovrLettr = () => {
   const user = useSessionUser();
   const [userAnswers, setUserAnswers] = useState();
   const [coverLetter, setCoverLetter] = useState();
   const [toggle, setToggle] = useState(false);
+  const history = useHistory();
+
+  useEffect(() => {
+    user ? console.log(`Logged in as ${user.email}`) : history.push('/userauth');
+  }, []);
 
   const handleChange = ({ target }) => {
     return setUserAnswers(prevState => ({
