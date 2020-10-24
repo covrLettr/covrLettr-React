@@ -3,7 +3,6 @@ import Form from '../components/Form/Form';
 import styles from './CovrLettr.css';
 import { post } from '../../src/components/services/request';
 import { useSessionUser } from '../components/hooks/auth';
-import { verifyAuth } from '../components/services/authApi';
 import { useHistory } from 'react-router-dom';
 
 
@@ -15,13 +14,7 @@ const CovrLettr = () => {
   const history = useHistory();
 
   useEffect(() => {
-    verifyAuth()
-      .then(user => {
-        console.log(user);
-      })
-      .catch(() => {
-        history.push('/userauth');
-      });
+    user ? console.log(`Logged in as ${user.email}`) : history.push('/userauth');
   }, []);
 
   const handleChange = ({ target }) => {
