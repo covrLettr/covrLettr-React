@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './About.css';
-import nikki from '../assets/nikki-sato.jpg';
-import travis from '../assets/travis-molter.jpg';
-import sam from '../assets/sam-sterns.jpg';
-import mike from '../assets/mike-grace.png';
+import nikki from '../../../public/assets/nikki-sato.jpg';
+import travis from '.../../../public/assets/travis-molter.jpg';
+import sam from '.../../../public/assets/sam-sterns.jpg';
+import mike from '.../../../public/assets/mike-grace.png';
 
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 

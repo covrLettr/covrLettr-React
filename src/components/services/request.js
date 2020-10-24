@@ -1,5 +1,5 @@
 const request = (path, method, body, letter) => {
-  return fetch(`https://covr-lettrs.herokuapp.com/api/v1${path}`, {
+  return fetch(`${process.env.GATSBY_API_URL}${path}`, {
     method,
     headers: {
       'Content-Type': 'application/json',

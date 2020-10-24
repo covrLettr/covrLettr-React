@@ -7,7 +7,7 @@ const Header = () => {
   const user = useSessionUser();
 
   const handleLogout = () => {
-    return fetch('https://covr-lettrs.herokuapp.com/api/v1/auth/logout', {
+    return fetch(`${process.env.GATSBY_API_URL}/auth/logout`, {
       method: 'POST',
       credentials: 'include',
       headers: {
